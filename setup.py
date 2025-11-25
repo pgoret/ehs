@@ -1,19 +1,18 @@
 from setuptools import setup, find_packages
 
 with open("requirements.txt") as f:
-	install_requires = f.read().strip().split("\n")
+    install_requires = f.read().strip().split("\n")
 
-# get version from __version__ variable in ehs/__init__.py
-from erpnext_ehs import __version__ as version
+from ehs import __version__ as version
 
 setup(
-	name="ehs",
-	version=version,
-	description="environnement sante securite",
-	author="SCN",
-	author_email="s.cnudde@caconsultants.be",
-	packages=find_packages(),
-	zip_safe=False,
-	include_package_data=True,
-	install_requires=install_requires
+    name="ehs",
+    version=version,
+    description="Environnement, Sante, Securite module for ERPNext",
+    author="Pierre Goret",
+    author_email="p.goret@caconsultants.be",
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=install_requires,
+    zip_safe=False,
 )

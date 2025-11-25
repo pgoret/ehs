@@ -1,18 +1,16 @@
 include MANIFEST.in
 include requirements.txt
-include *.json
-include *.md
-include *.py
-include *.txt
+include setup.py
+include README.md
+recursive-include ehs *.py
+recursive-include ehs *.json
+recursive-include ehs *.js
+recursive-include ehs *.md
+recursive-include ehs *.txt
 recursive-include ehs *.css
 recursive-include ehs *.csv
 recursive-include ehs *.html
 recursive-include ehs *.ico
-recursive-include ehs *.js
-recursive-include ehs *.json
-recursive-include ehs *.md
 recursive-include ehs *.png
-recursive-include ehs *.py
 recursive-include ehs *.svg
-recursive-include ehs *.txt
 recursive-exclude ehs *.pyc

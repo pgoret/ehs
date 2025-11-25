@@ -1,13 +1,14 @@
 from . import __version__ as app_version
 
 app_name = "ehs"
-app_title = "ehs"
-app_publisher = "PGO"
-app_description = "environnement sante securite"
-app_icon = "heart-active"
-app_color = "red"
+app_title = "EHS"
+app_publisher = "Pierre Goret"
+app_description = "Environnement, Sante, Securite module for ERPNext"
 app_email = "p.goret@caconsultants.be"
 app_license = "MIT"
+required_apps = ["erpnext"]
+app_icon = "heart-active"
+app_color = "red"
 
 # Includes in <head>
 # ------------------
