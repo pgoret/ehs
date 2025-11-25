@@ -1,0 +1,361 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-10-02 15:51:50.471498",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "inspection_date",
+  "work_order",
+  "cc",
+  "cb00",
+  "equipment",
+  "process_audited",
+  "auditor_link",
+  "audited_employe",
+  "photo_chantier",
+  "sb00",
+  "ordre",
+  "risques_ext\u00e9rieurs",
+  "acc\u00e8s_en_s\u00e9curit\u00e9",
+  "panneau_de_validation",
+  "rangement_fin_utilisation",
+  "s\u00e9curisation_mini_pc_et_pc_c\u00e2ble_s\u00e9curit\u00e9",
+  "date_\u00e9talonnage_\u00e9quipement",
+  "cb01",
+  "remark1_orga",
+  "securite_personnel_section",
+  "chaussures",
+  "casque",
+  "lunettes",
+  "gants",
+  "cb02",
+  "remark_01_sec",
+  "connaisance_des_risques_et_mesures_section",
+  "existence_analyse_de_risques",
+  "ardm_remplie_et_transmise",
+  "absence_de_situation_dangereuse",
+  "habilitation_aux_taches",
+  "cb05",
+  "remark_1_risk",
+  "respect_des_proc\u00e9dures_internes_section",
+  "r\u00e8gle_des_arrondis",
+  "respect_r\u00e8gles_documentaires_client",
+  "classement_dossier",
+  "encodage_des_prestations_erp",
+  "historique_de_validation",
+  "cb07",
+  "remark_1_int",
+  "sb08",
+  "visites_de_chantier_detail",
+  "sb09",
+  "signature_audit\u00e9",
+  "sb10",
+  "signature_auditeur",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "VC-.audited_employe.-.YYYY.-.MM.-.#"
+  },
+  {
+   "fieldname": "inspection_date",
+   "fieldtype": "Date",
+   "label": "Inspection date"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "label": "Work order"
+  },
+  {
+   "fieldname": "cc",
+   "fieldtype": "Link",
+   "label": "CC",
+   "options": "Project"
+  },
+  {
+   "fieldname": "cb00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Data",
+   "label": "Equipment"
+  },
+  {
+   "fieldname": "process_audited",
+   "fieldtype": "Data",
+   "label": "Process audited"
+  },
+  {
+   "fieldname": "auditor_link",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Auditor",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "audited_employe",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Audited Employe",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo_chantier",
+   "fieldtype": "Attach Image",
+   "label": "Photo chantier"
+  },
+  {
+   "fieldname": "sb00",
+   "fieldtype": "Section Break",
+   "label": "ORGANISATION DU TRAVAIL/SECURITE MATERIEL"
+  },
+  {
+   "fieldname": "ordre",
+   "fieldtype": "Select",
+   "label": "Ordre/ Poste de travail d\u00e9gag\u00e9",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "risques_ext\u00e9rieurs",
+   "fieldtype": "Select",
+   "label": "Risques ext\u00e9rieurs",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "acc\u00e8s_en_s\u00e9curit\u00e9",
+   "fieldtype": "Select",
+   "label": "Permis de travail - AR",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "panneau_de_validation",
+   "fieldtype": "Select",
+   "label": "Panneau de validation en cours",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "rangement_fin_utilisation",
+   "fieldtype": "Select",
+   "label": "V\u00e9rifier le rangement des \u00e9talons",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "s\u00e9curisation_mini_pc_et_pc_c\u00e2ble_s\u00e9curit\u00e9",
+   "fieldtype": "Select",
+   "label": "S\u00e9curisation mini PC et PC (c\u00e2ble s\u00e9curit\u00e9)",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "date_\u00e9talonnage_\u00e9quipement",
+   "fieldtype": "Select",
+   "label": "Date \u00e9talonnage \u00e9quipement",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "cb01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark1_orga",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "securite_personnel_section",
+   "fieldtype": "Section Break",
+   "label": "Securite personnel"
+  },
+  {
+   "fieldname": "chaussures",
+   "fieldtype": "Select",
+   "label": "Chaussures",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "casque",
+   "fieldtype": "Select",
+   "label": "Casque/casquette",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "lunettes",
+   "fieldtype": "Select",
+   "label": "Lunettes",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "gants",
+   "fieldtype": "Select",
+   "label": "Gants",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "cb02",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark_01_sec",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "connaisance_des_risques_et_mesures_section",
+   "fieldtype": "Section Break",
+   "label": "Connaisance des risques et mesures"
+  },
+  {
+   "fieldname": "existence_analyse_de_risques",
+   "fieldtype": "Select",
+   "label": "Existence analyse de risques",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "ardm_remplie_et_transmise",
+   "fieldtype": "Select",
+   "label": "ARDM r\u00e9alis\u00e9e",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "absence_de_situation_dangereuse",
+   "fieldtype": "Select",
+   "label": "Absence de situation dangereuse/action dangereuse",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "habilitation_aux_taches",
+   "fieldtype": "Select",
+   "label": "Habilitation aux t\u00e2ches",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "cb05",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark_1_risk",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "respect_des_proc\u00e9dures_internes_section",
+   "fieldtype": "Section Break",
+   "label": "Respect des proc\u00e9dures"
+  },
+  {
+   "fieldname": "r\u00e8gle_des_arrondis",
+   "fieldtype": "Select",
+   "label": "R\u00e8gle des arrondis"
+  },
+  {
+   "fieldname": "respect_r\u00e8gles_documentaires_client",
+   "fieldtype": "Select",
+   "label": "Respect r\u00e8gles documentaires client"
+  },
+  {
+   "fieldname": "classement_dossier",
+   "fieldtype": "Select",
+   "label": "Classement dossier/Respect identification des fichiers",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "encodage_des_prestations_erp",
+   "fieldtype": "Select",
+   "label": "Encodage des prestations et \u00e9talons",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "historique_de_validation",
+   "fieldtype": "Select",
+   "label": "Historique de cycles",
+   "options": "\nOK\nNOK\nN/A"
+  },
+  {
+   "fieldname": "cb07",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark_1_int",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sb08",
+   "fieldtype": "Section Break",
+   "label": "Suivi"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "visites_de_chantier_detail",
+   "fieldtype": "Table",
+   "label": "Suivi audit\u00e9",
+   "options": "Visite chantier Detail"
+  },
+  {
+   "fieldname": "sb09",
+   "fieldtype": "Section Break",
+   "label": "Signature audit\u00e9 pour accord"
+  },
+  {
+   "fieldname": "signature_audit\u00e9",
+   "fieldtype": "Signature",
+   "label": "Signature Audit\u00e9",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "sb10",
+   "fieldtype": "Section Break",
+   "label": "Signature Auditeur pour accord"
+  },
+  {
+   "fieldname": "signature_auditeur",
+   "fieldtype": "Signature",
+   "label": "Signature auditeur"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visite chantier",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-30 15:35:40.565201",
+ "modified_by": "Administrator",
+ "module": "EHS",
+ "name": "Visite chantier",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

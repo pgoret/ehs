@@ -1,0 +1,8 @@
+// Copyright (c) 2022, SCN and contributors
+// For license information, please see license.txt
+
+frappe.ui.form.on('Declaration d accident', {
+	// refresh: function(frm) {
+
+	// }
+});

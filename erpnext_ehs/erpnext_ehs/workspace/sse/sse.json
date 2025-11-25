@@ -1,0 +1,87 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-10-02 15:43:33.705636",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "heart-active",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "SSE",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sant\u00e9",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visite m\u00e9dicale & Vaccination",
+   "link_to": "Vaccination et Visite medicale",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Registre faits de tiers",
+   "link_to": "Registre faits de tiers",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "D\u00e9claration d'accident",
+   "link_to": "Declaration d accident",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "S\u00e9curit\u00e9",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visite de chantier",
+   "link_to": "Visite chantier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Situation dangereuse & incident",
+   "link_to": "Situation dangereuse et incident",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-05-12 14:04:43.057914",
+ "modified_by": "s.cnudde@caconsultants.be",
+ "module": "EHS",
+ "name": "SSE",
+ "owner": "s.cnudde@caconsultants.be",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": []
+}

@@ -2,11 +2,11 @@ from . import __version__ as app_version
 
 app_name = "ehs"
 app_title = "ehs"
-app_publisher = "SCN"
+app_publisher = "PGO"
 app_description = "environnement sante securite"
 app_icon = "heart-active"
 app_color = "red"
-app_email = "s.cnudde@caconsultants.be"
+app_email = "p.goret@caconsultants.be"
 app_license = "MIT"
 
 # Includes in <head>

@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SDI-.declarant.-.YY.-.MM.-.DD.-.##",
+ "creation": "2021-10-02 15:42:42.112709",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sb_00",
+  "declarant",
+  "date_heure_incident",
+  "type_incident",
+  "cb_00_column",
+  "lieu_incident",
+  "experience",
+  "attachment",
+  "sb_01",
+  "materiel",
+  "forme_incident_1",
+  "forme_incident_autre",
+  "victime_endroit",
+  "temoin",
+  "cb_02",
+  "epi_1",
+  "epi_2",
+  "epi_3",
+  "epi_4",
+  "epi_5",
+  "epi_6",
+  "epi_autre",
+  "type_blessure_1",
+  "type_blessure_2",
+  "type_blessure_3",
+  "data_25",
+  "sb_02",
+  "description_incident",
+  "solution",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sb_00",
+   "fieldtype": "Section Break",
+   "label": "Victime"
+  },
+  {
+   "fieldname": "declarant",
+   "fieldtype": "Link",
+   "label": "D\u00e9clarant",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date_heure_incident",
+   "fieldtype": "Datetime",
+   "label": "Date et heure de l'incident"
+  },
+  {
+   "fieldname": "type_incident",
+   "fieldtype": "Select",
+   "label": "Type d'\u00e9v\u00e8nement ind\u00e9sirable",
+   "options": "\nIncident\nAccident\nAccident GRAVE\nAccident sur le chemin de travail\nSituation dangereuse\nComportement dangereux"
+  },
+  {
+   "fieldname": "cb_00_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lieu_incident",
+   "fieldtype": "Data",
+   "label": "Lieu extacte"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Select",
+   "label": "Exp\u00e9rience",
+   "options": "\nNouvel embauch\u00e9\nNouveau dans la fonction\nD\u00e9plac\u00e9 du poste habituel\nPoste habituel"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach Image",
+   "label": "Photo ou fichier attachment"
+  },
+  {
+   "fieldname": "sb_01",
+   "fieldtype": "Section Break",
+   "label": "Circonstances"
+  },
+  {
+   "fieldname": "materiel",
+   "fieldtype": "Data",
+   "label": "Materiel impliqu\u00e9"
+  },
+  {
+   "fieldname": "forme_incident_1",
+   "fieldtype": "Table MultiSelect",
+   "label": "Forme d'incident (plusieurs choix possible)",
+   "options": "Formes Evenement Indesirable Details"
+  },
+  {
+   "fieldname": "victime_endroit",
+   "fieldtype": "Data",
+   "label": "Endroit o\u00f9 la victime a \u00e9t\u00e9 touch\u00e9e"
+  },
+  {
+   "fieldname": "temoin",
+   "fieldtype": "Data",
+   "label": "Temoin"
+  },
+  {
+   "fieldname": "cb_02",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "epi_1",
+   "fieldtype": "Select",
+   "label": "EPI n\u00b01",
+   "options": "\nV\u00eatements de travail\nChaussures de s\u00e9curit\u00e9\nCasque de chantier\nProtection anti-bruit\nGants\nLunettes de protection\nCeinture / Harnais\nMasque anti poussi\u00e8res\nMasque anti gaz\nPas d'EPI\nN/A"
+  },
+  {
+   "depends_on": "epi_1",
+   "fieldname": "epi_2",
+   "fieldtype": "Select",
+   "label": "EPI n\u00b02",
+   "options": "\nV\u00eatements de travail\nChaussures de s\u00e9curit\u00e9\nCasque de chantier\nProtection anti-bruit\nGants\nLunettes de protection\nCeinture / Harnais\nMasque anti poussi\u00e8res\nMasque anti gaz\nPas d'EPI\nN/A"
+  },
+  {
+   "depends_on": "epi_2",
+   "fieldname": "epi_3",
+   "fieldtype": "Select",
+   "label": "EPI n\u00b03",
+   "options": "\nV\u00eatements de travail\nChaussures de s\u00e9curit\u00e9\nCasque de chantier\nProtection anti-bruit\nGants\nLunettes de protection\nCeinture / Harnais\nMasque anti poussi\u00e8res\nMasque anti gaz\nPas d'EPI\nN/A"
+  },
+  {
+   "depends_on": "epi_3",
+   "fieldname": "epi_4",
+   "fieldtype": "Select",
+   "label": "EPI n\u00b04",
+   "options": "\nV\u00eatements de travail\nChaussures de s\u00e9curit\u00e9\nCasque de chantier\nProtection anti-bruit\nGants\nLunettes de protection\nCeinture / Harnais\nMasque anti poussi\u00e8res\nMasque anti gaz\nPas d'EPI\nN/A"
+  },
+  {
+   "depends_on": "epi_4",
+   "fieldname": "epi_5",
+   "fieldtype": "Select",
+   "label": "EPI n\u00b05",
+   "options": "\nV\u00eatements de travail\nChaussures de s\u00e9curit\u00e9\nCasque de chantier\nProtection anti-bruit\nGants\nLunettes de protection\nCeinture / Harnais\nMasque anti poussi\u00e8res\nMasque anti gaz\nPas d'EPI\nN/A"
+  },
+  {
+   "depends_on": "epi_5",
+   "fieldname": "epi_6",
+   "fieldtype": "Select",
+   "label": "EPI n\u00b06",
+   "options": "\nV\u00eatements de travail\nChaussures de s\u00e9curit\u00e9\nCasque de chantier\nProtection anti-bruit\nGants\nLunettes de protection\nCeinture / Harnais\nMasque anti poussi\u00e8res\nMasque anti gaz\nPas d'EPI\nN/A"
+  },
+  {
+   "fieldname": "epi_autre",
+   "fieldtype": "Data",
+   "label": "Autre EPI"
+  },
+  {
+   "fieldname": "type_blessure_1",
+   "fieldtype": "Select",
+   "label": "Type de blessure n\u00b01",
+   "mandatory_depends_on": "eval:doc.type_incident == \"Accident\" || doc.type_incident == \"Accident GRAVE\" || doc.type_incident == \"Accident sur le chemin de travail\"\n\n",
+   "options": "\nCoup\nPlaie\nPiq\u00fbre\n\u00c9corchure\nBr\u00fblure\nFracture\nEntorse\nIntoxication\nAsphyxie\nChoc \u00e9lectrique\nD\u00e9chirure musculaire\nPas de blessure\nN/A"
+  },
+  {
+   "depends_on": "eval:doc.type_blessure_1 != \"N/A\" ",
+   "fieldname": "type_blessure_2",
+   "fieldtype": "Select",
+   "label": "Type de blessure n\u00b02",
+   "options": "\nCoup\nPlaie\nPiq\u00fbre\n\u00c9corchure\nBr\u00fblure\nFracture\nEntorse\nIntoxication\nAsphyxie\nChoc \u00e9lectrique\nD\u00e9chirure musculaire\nN/A"
+  },
+  {
+   "depends_on": "type_blessure_2",
+   "fieldname": "type_blessure_3",
+   "fieldtype": "Select",
+   "label": "Type de blessure n\u00b03",
+   "options": "\nCoup\nPlaie\nPiq\u00fbre\n\u00c9corchure\nBr\u00fblure\nFracture\nEntorse\nIntoxication\nAsphyxie\nChoc \u00e9lectrique\nD\u00e9chirure musculaire\nN/A"
+  },
+  {
+   "fieldname": "sb_02",
+   "fieldtype": "Section Break",
+   "label": "Compte rendu"
+  },
+  {
+   "fieldname": "description_incident",
+   "fieldtype": "Long Text",
+   "label": "Description du travail lors de l'incident ou la situation dangereuse"
+  },
+  {
+   "fieldname": "solution",
+   "fieldtype": "Text Editor",
+   "label": "Proposition solution"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Situation dangereuse et incident",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_25",
+   "fieldtype": "Data",
+   "label": "Autre Type de blessure "
+  },
+  {
+   "depends_on": "forme_incident_1",
+   "fieldname": "forme_incident_autre",
+   "fieldtype": "Data",
+   "label": "Forme d'incident autre"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-07 12:08:39.368170",
+ "modified_by": "Administrator",
+ "module": "EHS",
+ "name": "Situation dangereuse et incident",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

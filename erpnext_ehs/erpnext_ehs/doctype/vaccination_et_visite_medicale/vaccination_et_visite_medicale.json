@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-10-02 16:31:39.037849",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "naming_series",
+  "sb_employee_detail",
+  "employee",
+  "employee_name",
+  "cb00",
+  "p\u00e9riodicit\u00e9_examen_m\u00e9dical",
+  "expiration_vm",
+  "expiration_polio",
+  "expiration_serology_polio",
+  "historique_vaccins_section",
+  "table_7",
+  "visite_m\u00e9dicale_section",
+  "table_9"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "options": "VAC-VM-.employee.",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb_employee_detail",
+   "fieldtype": "Section Break",
+   "label": "Employee Detail"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "employee",
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p\u00e9riodicit\u00e9_examen_m\u00e9dical",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "P\u00e9riodicit\u00e9 examen m\u00e9dical",
+   "options": "Annuelle\nNon obligatoire (\u00e0 d\u00e9terminer selon AR)\nExempt\u00e9"
+  },
+  {
+   "description": "VM +1 an",
+   "fieldname": "expiration_vm",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiration VM"
+  },
+  {
+   "description": "Vaccin Polio +10 ans",
+   "fieldname": "expiration_polio",
+   "fieldtype": "Date",
+   "label": "Expiration Polio"
+  },
+  {
+   "description": "S\u00e9rologie Polio +3 ans",
+   "fieldname": "expiration_serology_polio",
+   "fieldtype": "Date",
+   "label": "Expiration s\u00e9rologie Polio"
+  },
+  {
+   "fieldname": "historique_vaccins_section",
+   "fieldtype": "Section Break",
+   "label": "Historique vaccins"
+  },
+  {
+   "fieldname": "table_7",
+   "fieldtype": "Table",
+   "options": "Vaccin Detail"
+  },
+  {
+   "fieldname": "visite_m\u00e9dicale_section",
+   "fieldtype": "Section Break",
+   "label": "Visite m\u00e9dicale"
+  },
+  {
+   "fieldname": "table_9",
+   "fieldtype": "Table",
+   "options": "Visite medicale Detail"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-26 11:14:47.607940",
+ "modified_by": "Administrator",
+ "module": "EHS",
+ "name": "Vaccination et Visite medicale",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

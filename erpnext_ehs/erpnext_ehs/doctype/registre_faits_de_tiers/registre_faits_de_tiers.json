@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "autoname": "naming_series",
+ "creation": "2021-10-02 16:55:23.164215",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "presentation",
+  "sb00",
+  "date_faits",
+  "id_tiers",
+  "ent_tiers",
+  "sb01",
+  "check_vio",
+  "check_har_moral",
+  "check_har_sex",
+  "check_other",
+  "cb_00",
+  "check_vio_physique",
+  "check_vio_psychique",
+  "sb03",
+  "text_description",
+  "sb04",
+  "signature_decla",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "DT-S013-.employee.-.YYYY.-.##"
+  },
+  {
+   "default": "Cet outil est \u00e0 disposition des travailleurs afin de d\u00e9clarer des faits caus\u00e9s par des tiers, \u00e0 savoir le registre des faits de tiers. Ce registre est un document de pr\u00e9vention sp\u00e9cialement con\u00e7u pour le traitement de la violence sous diff\u00e9rentes formes, le harc\u00e8lement moral et/ou sexuel au travail d\u2019origine externe.\n\nCe document a pour but de constater la nature et l\u2019ampleur des faits, de sorte que l\u2019employeur puisse prendre, le cas \u00e9ch\u00e9ant, des mesures de pr\u00e9vention vis \u00e0 vis de tiers sur le lieu de travail.\n\nLorsqu\u2019un travailleur s\u2019estime victime de violence ou de harc\u00e8lement moral ou sexuel au travail caus\u00e9 par un tiers, il doit pouvoir faire reprendre ses d\u00e9clarations dans un registre. Ces d\u00e9clarations contiennent une description des faits de violence, de harc\u00e8lement moral ou sexuel au travail ainsi que la date de ces faits. Elle ne comprend pas l\u2019identit\u00e9 du travailleur.",
+   "fieldname": "presentation",
+   "fieldtype": "Text",
+   "label": "Pr\u00e9sentation du registre des faits de tiers"
+  },
+  {
+   "fieldname": "sb00",
+   "fieldtype": "Section Break",
+   "label": "D\u00e9claration"
+  },
+  {
+   "fieldname": "date_faits",
+   "fieldtype": "Date",
+   "label": "Date des faits"
+  },
+  {
+   "fieldname": "id_tiers",
+   "fieldtype": "Data",
+   "label": "Identit\u00e9 tiers"
+  },
+  {
+   "fieldname": "ent_tiers",
+   "fieldtype": "Data",
+   "label": "Entreprise/soci\u00e9t\u00e9 du tiers"
+  },
+  {
+   "fieldname": "sb01",
+   "fieldtype": "Section Break",
+   "label": "Les faits"
+  },
+  {
+   "default": "0",
+   "description": "D\u00e9finition de violence au travail : chaque situation de fait o\u00f9 un travailleur ou une autre personne \u00e0 laquelle le pr\u00e9sent chapitre est d\u2019application, est menac\u00e9 ou agress\u00e9 psychiquement ou physiquement lors de l\u2019ex\u00e9cution du travail.",
+   "fieldname": "check_vio",
+   "fieldtype": "Check",
+   "label": "Violence au travail"
+  },
+  {
+   "default": "0",
+   "description": "D\u00e9finition Harcelement moral au travail : plusieurs conduites abusives similaires ou diff\u00e9rentes, externes ou internes \u00e0\nl\u2019entreprise ou l\u2019institution, qui se produisent pendant un certain temps, qui ont pour objet ou pour\neffet de porter atteinte \u00e0 la personnalit\u00e9, la dignit\u00e9 ou l\u2019int\u00e9grit\u00e9 physique ou psychique d\u2019un\ntravailleur ou d\u2019une autre personne \u00e0 laquelle le pr\u00e9sent chapitre est d\u2019application, lors de\nl\u2019ex\u00e9cution de son travail, de mettre en p\u00e9ril son emploi ou de cr\u00e9er un environnement intimidant,\nhostile, d\u00e9gradant, humiliant ou offensant et qui se manifestent notamment par des paroles, des\nintimidations, des actes, des gestes ou des \u00e9crits unilat\u00e9raux. Ces conduites peuvent notamment\n\u00eatre li\u00e9es \u00e0 la religion ou aux convictions, au handicap, \u00e0 l\u2019\u00e2ge, \u00e0 l\u2019orientation sexuelle, au sexe, \u00e0\nla race ou l\u2019origine ethnique).",
+   "fieldname": "check_har_moral",
+   "fieldtype": "Check",
+   "label": "Harcelement moral au travail"
+  },
+  {
+   "default": "0",
+   "description": "D\u00e9finition harc\u00e8lement sexuel au travail : tout comportement non d\u00e9sir\u00e9 verbal, non verbal ou corporel \u00e0 connotation sexuelle,\nayant pour objet ou pour effet de porter atteinte \u00e0 la dignit\u00e9 d\u2019une personne ou de cr\u00e9er un\nenvironnement intimidant, hostile, d\u00e9gradant, humiliant ou offensant.",
+   "fieldname": "check_har_sex",
+   "fieldtype": "Check",
+   "label": "Harcelement sexuel au travail"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_other",
+   "fieldtype": "Check",
+   "label": "Autre(s)"
+  },
+  {
+   "fieldname": "cb_00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "check_vio",
+   "fieldname": "check_vio_physique",
+   "fieldtype": "Check",
+   "label": "Violence physique"
+  },
+  {
+   "default": "0",
+   "depends_on": "check_vio",
+   "fieldname": "check_vio_psychique",
+   "fieldtype": "Check",
+   "label": "Violence psychique"
+  },
+  {
+   "fieldname": "sb03",
+   "fieldtype": "Section Break",
+   "label": "Description des faits"
+  },
+  {
+   "fieldname": "text_description",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "fieldname": "sb04",
+   "fieldtype": "Section Break",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "signature_decla",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Registre faits de tiers",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-12 14:03:48.626960",
+ "modified_by": "Administrator",
+ "module": "EHS",
+ "name": "Registre faits de tiers",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
